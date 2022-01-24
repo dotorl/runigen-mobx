@@ -1,7 +1,5 @@
-import { TodoData } from '@typings/TodoData';
+import { TodoData } from '@interfaces/TodoData';
 import { observable } from 'mobx';
-
-
 
 interface Todo {
   todoData: TodoData[];

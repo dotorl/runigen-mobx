@@ -2,7 +2,7 @@
 import React from 'react';
 
 
-import { TodoData } from '@typings/TodoData';
+import { TodoData } from '@interfaces/TodoData';
 import useStore from '@stores/index';
 
 interface Props {

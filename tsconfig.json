@@ -24,7 +24,7 @@
       "@layouts/*": ["src/layouts/*"],
       "@pages/*": ["src/pages/*"],
       "@stores/*": ["src/stores/*"],
-      "@typings/*": ["src/typings/*"],
+      "@interfaces/*": ["src/interfaces/*"],
       "@utils/*": ["src/utils/*"],
     },
   },

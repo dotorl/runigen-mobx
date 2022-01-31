@@ -26,7 +26,7 @@ const Choks = observer(() => {
       Double.value = 0;
     }
 
-    console.log('assf');
+    console.log('asdasd');
     console.log('adafa');
   });
 

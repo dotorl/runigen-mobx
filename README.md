@@ -1,4 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Use Library
+
+```bash
+npm i mobx mobx-react
+
+npm i -D prettier eslint eslint-plugin-prettier eslint-config-prettier
+
+
+```
+
+- 기본적인 prettier과 eslint만 적용
+
+- prettier 적용 안될 시 VScode setting 확인 ( Format On Save 및 Default defaultFormatter 제대로 적용 되어있는지 )
 
 ## Getting Started
 

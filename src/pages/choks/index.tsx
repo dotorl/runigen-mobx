@@ -2,7 +2,6 @@ import React from 'react';
 import useStore from '@stores/index';
 import { observer, useObserver } from 'mobx-react';
 import { autorun } from 'mobx';
-import SuperMarket from '@components/Market';
 import TodoItem from '@components/TodoItem';
 import TodoForm from '@components/TodoForm';
 
@@ -25,15 +24,12 @@ const Choks = observer(() => {
       console.log(`만약 value가 8이라면 0으로 초기화`);
       Double.value = 0;
     }
-
-    console.log('asdasd');
-    console.log('adafa');
   });
 
   return (
     <>
-      <div style={{ padding: '50px' }}>
-        <div style={{ marginBottom: '50px' }}>
+      <div>
+        <div>
           <h1>Count (Class)</h1>
           <div>number: {Count.num}</div>
           <button onClick={() => Count.increase()}>plus</button>
@@ -46,8 +42,6 @@ const Choks = observer(() => {
         <div>double number: {Double.value}</div>
         <button onClick={() => Double.increment()}>double increment</button>
       </div>
-
-      <SuperMarket />
 
       <p>TODO</p>
       <TodoForm />

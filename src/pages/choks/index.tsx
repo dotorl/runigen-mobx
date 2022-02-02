@@ -4,6 +4,7 @@ import { observer, useObserver } from 'mobx-react';
 import { autorun } from 'mobx';
 import TodoItem from '@components/TodoItem';
 import TodoForm from '@components/TodoForm';
+import AppLayout from '@layouts/AppLayout';
 
 // :FC 관련 사용하면 좋지 않다는 말이있어서 해제
 const Choks = observer(() => {
@@ -27,28 +28,30 @@ const Choks = observer(() => {
   });
 
   return (
-    <>
-      <div>
+    <AppLayout>
+      <>
         <div>
-          <h1>Count (Class)</h1>
-          <div>number: {Count.num}</div>
-          <button onClick={() => Count.increase()}>plus</button>
-          <button onClick={() => Count.decrease()}>minus</button>
+          <div>
+            <h1>Count (Class)</h1>
+            <div>number: {Count.num}</div>
+            <button onClick={() => Count.increase()}>plus</button>
+            <button onClick={() => Count.decrease()}>minus</button>
+          </div>
         </div>
-      </div>
 
-      <div>
-        <h1>Computed</h1>
-        <div>double number: {Double.value}</div>
-        <button onClick={() => Double.increment()}>double increment</button>
-      </div>
+        <div>
+          <h1>Computed</h1>
+          <div>double number: {Double.value}</div>
+          <button onClick={() => Double.increment()}>double increment</button>
+        </div>
 
-      <p>TODO</p>
-      <TodoForm />
-      {Todo.todoData.map((v) => {
-        return <TodoItem data={v} key={`todoData_${v.id}`} />;
-      })}
-    </>
+        <p>TODO</p>
+        <TodoForm />
+        {Todo.todoData.map((v) => {
+          return <TodoItem data={v} key={`todoData_${v.id}`} />;
+        })}
+      </>
+    </AppLayout>
   );
 });
 

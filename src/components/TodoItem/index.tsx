@@ -1,12 +1,10 @@
-
 import React from 'react';
 
-
-import { TodoData } from '@interfaces/TodoData';
+import { ITodoData } from '@interfaces/todoData';
 import useStore from '@stores/index';
 
 interface Props {
-  data: TodoData;
+  data: ITodoData;
 }
 
 const TodoItem = ({ data }: Props) => {

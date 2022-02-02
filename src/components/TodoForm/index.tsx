@@ -1,7 +1,6 @@
 import useStore from '@stores/index';
 import React, { useState } from 'react';
 
-
 const TodoForm = () => {
   const { Todo } = useStore();
   const [content, setContent] = useState('');

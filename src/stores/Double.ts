@@ -1,12 +1,19 @@
 import { observable } from 'mobx';
 
-const Double = observable({
+interface IDouble {
+  value: number;
+  increment: () => void;
+  getDouble: number;
+  // getDouble: () => number;  // getter는 실제로 함수형태로 호출되지않으므로 이렇게 선언하면 안되는듯
+}
+
+const Double = observable<IDouble>({
   value: 1,
-  get getDouble(){
-    return this.value * 2;
-  },
   increment() {
-    this.value++
+    this.value++;
+  },
+  get getDouble() {
+    return this.value * 2;
   },
 });
 

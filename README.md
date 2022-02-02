@@ -1,10 +1,42 @@
+## Project Structure
+
+```
+
+📦 public               ------------------- 어플리케이션에 사용되는 정적파일들
+ ┃
+📦 src
+ ┣ 📂 components        ------------------- 레이아웃 및 공통 컴포넌트
+ ┃ ┣ 📂 Component1
+ ┃ ┣ 📂 Component2
+ ┃ ┣ 📂 Component3
+ ┣ 📂 consts            ------------------- 각종 상수관련 const 파일
+ ┣ 📂 core              ------------------- 각종 핵심 파일 ? ( NativeBridge 나 중요 핵심? )
+ ┣ 📂 hooks             ------------------- 각종 Custom Hooks 파일
+ ┣ 📂 interfaces        ------------------- Data Interfaces
+ ┃ ┣ 📜 interfaceTypes.ts
+ ┃ ┗ 📜 Weverse.d.ts
+ ┣ 📂 pages             ------------------- 각 페이지 담당(Dynamic Route)
+ ┃ ┗ 📂 Page1
+ ┃   📜 index.tsx
+ ┃ ┗ 📂 Page2
+ ┃   📜 index.tsx
+ ┃ 📜 _app.tsx
+ ┃ 📜 _document.tsx
+ ┃ 📜 index.tx
+ ┣ 📂 store             ------------------- Redux 상태관리 관련
+ ┃ ┣ 📜 xxx.ts
+ ┃ ┣ 📜 yyy.ts
+ ┃ ┗ 📜 index.ts
+ ┗ 📂 utils             ------------------- 각 컴포넌트에서 사용되는 유틸 함수
+ 📦 styles
+```
+
 ## Use Library
 
 ```bash
 npm i mobx mobx-react
 
 npm i -D prettier eslint eslint-plugin-prettier eslint-config-prettier
-
 
 ```
 

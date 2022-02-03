@@ -1,3 +1,5 @@
+// import style from '@layouts/AppLayout/style.scss';
+
 const AppLayout = ({ children }: { children: JSX.Element }) => {
   return (
     <>
@@ -8,7 +10,8 @@ const AppLayout = ({ children }: { children: JSX.Element }) => {
           <Content>{ children }</Content>
         </BodyBox>
       </App> */}
-      {children}
+
+      <div className="pageLayout">{children}</div>
     </>
   );
 };

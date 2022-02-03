@@ -28,7 +28,7 @@ const Choks = observer(() => {
   });
 
   return (
-    <AppLayout>
+    <>
       <>
         <div>
           <div>
@@ -51,7 +51,7 @@ const Choks = observer(() => {
           return <TodoItem data={v} key={`todoData_${v.id}`} />;
         })}
       </>
-    </AppLayout>
+    </>
   );
 });
 

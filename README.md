@@ -29,8 +29,9 @@
  ┃ ┗ 📜 index.ts
  ┗ 📂 utils             ------------------- 각 컴포넌트에서 사용되는 유틸 함수
  📦 styles
-📜 .nvmrc               ------------------- node 버전 관리를 위한 파일
+📜 .babelrc             ------------------- babel 관련
 📜 .eslintrc            ------------------- eslint
+📜 .nvmrc               ------------------- node 버전 관리를 위한 파일
 📜 .prettierrc          ------------------- prettier
 📜 tsconfig.json        ------------------- tsconfig
 ```
@@ -42,11 +43,15 @@ npm i mobx mobx-react
 
 npm i -D prettier eslint eslint-plugin-prettier eslint-config-prettier
 
+npm i sass
+
 ```
 
 - 기본적인 prettier과 eslint만 적용
 
 - prettier 적용 안될 시 VScode setting 확인 ( Format On Save 및 Default defaultFormatter 제대로 적용 되어있는지 )
+
+- sass를 추가하였으나, 각 폴더안에서 따로 scss를 관리하여 하고싶었는데, 해당부분은 웹팩등 다른 추가 라이브러리를 써서 custom해야 해서 추후에 처리하던지해야할듯 기본적으론 next.js 에서 \_app.tsx 에서 global하게 scss import 권장함
 
 ## Getting Started
 

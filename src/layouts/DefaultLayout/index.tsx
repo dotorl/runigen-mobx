@@ -1,7 +1,7 @@
 const DefaultLayout = ({ children }: { children: JSX.Element }) => {
-  return (
-    <>
-      {/*
+	return (
+		<>
+			{/*
       <App maxWidth="false">
         <BodyBox>
           <Sidebar></Sidebar>
@@ -9,9 +9,9 @@ const DefaultLayout = ({ children }: { children: JSX.Element }) => {
         </BodyBox>
       </App>
       */}
-      {children}
-    </>
-  );
+			{children}
+		</>
+	);
 };
 
 export default DefaultLayout;

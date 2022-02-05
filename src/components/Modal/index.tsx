@@ -3,11 +3,13 @@ import React, { FC, ReactNode, useCallback } from 'react';
 
 interface Props {
   show: boolean;
+  children: ReactNode;
   onCloseModal: () => void;
 }
 
 //
-const Modal = ({ show, children, onCloseModal }: { show: boolean; children: ReactNode; onCloseModal: () => void }) => {
+// const Modal = ({ show, children, onCloseModal }: { show: boolean; children: ReactNode; onCloseModal: () => void }) => {
+const Modal = ({ show, children, onCloseModal }: Props) => {
   // const Modal: FC<Props> = ({ show, children, onCloseModal }) => {
   const stopPropagation = useCallback((e) => {
     e.stopPropagation();

@@ -33,6 +33,7 @@
 📜 .eslintrc            ------------------- eslint
 📜 .nvmrc               ------------------- node 버전 관리를 위한 파일
 📜 .prettierrc          ------------------- prettier
+📜 .prettierignore      ------------------- prettier ignore
 📜 tsconfig.json        ------------------- tsconfig
 ```
 
@@ -53,6 +54,30 @@ npm i mobx mobx-react
 
 npm i -D prettier eslint eslint-plugin-prettier eslint-config-prettier
 
+eslint --init
+
 npm i sass
+
+```
+
+## eslint --init 관련 설정
+
+```bash
+eslint --init
+You can also run this command directly using 'npm init @eslint/config'.
+Need to install the following packages:
+  @eslint/create-config
+Ok to proceed? (y) y
+✔ How would you like to use ESLint? · problems
+✔ What type of modules does your project use? · esm
+✔ Which framework does your project use? · react
+✔ Does your project use TypeScript? · No / Yes
+✔ Where does your code run? · browser
+✔ What format do you want your config file to be in? · JSON
+The config that you've selected requires the following dependencies:
+
+eslint-plugin-react@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest
+✔ Would you like to install them now with npm? · No / Yes
+Installing eslint-plugin-react@latest, @typescript-eslint/eslint-plugin@latest, @typescript-eslint/parser@latest
 
 ```

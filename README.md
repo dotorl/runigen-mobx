@@ -54,13 +54,13 @@ npm i mobx mobx-react
 
 npm i -D prettier eslint eslint-plugin-prettier eslint-config-prettier
 
-eslint --init
-
 npm i sass
+
+npm i axios
 
 ```
 
-## eslint --init 관련 설정
+## eslint --init 관련 설정 (eslint --init 으로 eslint 생성)
 
 ```bash
 eslint --init

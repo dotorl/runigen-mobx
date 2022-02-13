@@ -10,7 +10,7 @@
 		"lint-check": "eslint --max-warnings 0 **/*.{ts,tsx}"
 	},
 	"lint-staged": {
-		"**/*.{ts,tsx}": [
+		"src/**/*.{ts,tsx}": [
 			"eslint --max-warnings 0",
 			"bash -c tsc --noEmit"
 		]
@@ -41,7 +41,7 @@
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-prettier": "^4.0.0",
 		"eslint-plugin-react": "^7.28.0",
-		"husky": "^7.0.4",
+		"husky": "^4.3.8",
 		"lint-staged": "^11.1.4",
 		"prettier": "^2.5.1",
 		"typescript": "4.5.5"

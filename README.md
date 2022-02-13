@@ -1,3 +1,21 @@
+## Commit Message Guideline
+
+첫 라인은 50자 이내이며 아래와 같은 prefix로 구분한다.
+
+- feat: 새로운 기능 추가
+- fix: 오류 수정
+- docs: 코딩 컨벤션, 스타일 작업
+- refactor: 코드 리팩토링
+- perf : 성능 개선
+- test: 테스팅 코드추가, 테스팅 수정
+- build : 빌드 시스템 변경, 모듈 설치 또는 삭제
+- ci : CI 설정 작업
+- chore : 소스코드나 테스트파일을 수정하지 않은 작업
+- revert : 이전 작업 취소
+- style: 코드변화없이 포멧팅 및 세미콜론 등의 변화로 인한 작업
+
+추가 설명 필요시 라인당 70자 이내로 작성한다.
+
 ## Project Structure
 
 ```
@@ -58,26 +76,10 @@ npm i sass
 
 npm i axios
 
+npm i -D husky lint-staged@next
 ```
 
-## eslint --init 관련 설정 (eslint --init 으로 eslint 생성)
+## (참고문서 - 공유된 notion 확인 )
 
-```bash
-eslint --init
-You can also run this command directly using 'npm init @eslint/config'.
-Need to install the following packages:
-  @eslint/create-config
-Ok to proceed? (y) y
-✔ How would you like to use ESLint? · problems
-✔ What type of modules does your project use? · esm
-✔ Which framework does your project use? · react
-✔ Does your project use TypeScript? · No / Yes
-✔ Where does your code run? · browser
-✔ What format do you want your config file to be in? · JSON
-The config that you've selected requires the following dependencies:
-
-eslint-plugin-react@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest
-✔ Would you like to install them now with npm? · No / Yes
-Installing eslint-plugin-react@latest, @typescript-eslint/eslint-plugin@latest, @typescript-eslint/parser@latest
-
-```
+- eslint --init 관련 설정 (eslint --init 으로 eslint 생성)
+- typescript-eslint Rule 관련 정의

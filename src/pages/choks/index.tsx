@@ -17,7 +17,7 @@ const Choks = observer(() => {
 	//     <>Hi</>
 	//   )
 	// )
-	asdfasdf;
+	adsfa;
 	useEffect(() => {
 		const axiosInstace = createAxiosInstance('http://localhost:3000');
 		axiosInstace.get('/api/hello', {}).then((res) => {

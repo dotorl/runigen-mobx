@@ -9,7 +9,12 @@ function MyApp({ Component, pageProps }: AppProps) {
 			<Component {...pageProps} />
 
 			{/*  TODO: Modal -> store로 관리할수있게 모듈화 처리 하면될듯*/}
-			<Modal show={false} onCloseModal={() => {}}>
+			<Modal
+				show={false}
+				onCloseModal={() => {
+					console.log('');
+				}}
+			>
 				<form>
 					<div>sadasd</div>
 				</form>

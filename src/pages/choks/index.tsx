@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import useStore from '@stores/index';
 import { observer, useObserver } from 'mobx-react';
 import { autorun } from 'mobx';
 import TodoItem from '@components/TodoItem';
 import TodoForm from '@components/TodoForm';
 import AppLayout from '@layouts/AppLayout';
+import { createAxiosInstance } from 'src/core/axiosHelper';
 
 // :FC 관련 사용하면 좋지 않다는 말이있어서 해제
 const Choks = observer(() => {
@@ -16,6 +17,13 @@ const Choks = observer(() => {
 	//     <>Hi</>
 	//   )
 	// )
+
+	useEffect(() => {
+		const axiosInstace = createAxiosInstance('http://localhost:3000');
+		axiosInstace.get('/api/hello', {}).then((res) => {
+			console.log(res);
+		});
+	}, []);
 
 	autorun(() => {
 		// if( Double.double ){

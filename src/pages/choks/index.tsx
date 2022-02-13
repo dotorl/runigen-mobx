@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import useStore from '@stores/index';
 import { observer, useObserver } from 'mobx-react';
 import { autorun } from 'mobx';
@@ -17,7 +17,7 @@ const Choks = observer(() => {
 	//     <>Hi</>
 	//   )
 	// )
-
+	asdfasdf;
 	useEffect(() => {
 		const axiosInstace = createAxiosInstance('http://localhost:3000');
 		axiosInstace.get('/api/hello', {}).then((res) => {

@@ -1,4 +1,4 @@
-import { ITodoData } from '@interfaces/todoData';
+import { ITodoData } from '@interfaces/TodoData';
 import { observable } from 'mobx';
 
 interface ITodo {

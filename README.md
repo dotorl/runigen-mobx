@@ -77,6 +77,8 @@ npm i sass
 npm i axios
 
 npm i -D husky@4 lint-staged@next
+
+npm i -D classnames
 ```
 
 ## (참고문서 - 공유된 notion 확인 )

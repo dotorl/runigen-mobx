@@ -4,8 +4,8 @@ import Todo from '@stores/Todo';
 
 const store = { Count, Double, Todo };
 
-function useStore() {
+const useStore = () => {
 	return store;
-}
+};
 
 export default useStore;

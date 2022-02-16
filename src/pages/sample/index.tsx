@@ -1,15 +1,17 @@
 import React, { useEffect } from 'react';
-import useStore from '@stores/index';
 import { observer } from 'mobx-react';
-import { autorun } from 'mobx';
-import TodoItem from '@components/TodoItem';
-import TodoForm from '@components/TodoForm';
 import { createAxiosInstance } from 'src/core/axiosHelper';
 import NextLink from '@components/NextLink';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 // :FC 관련 사용하면 좋지 않다는 말이있어서 해제
 const Sample = observer(() => {
+	// 위쪽에 observer를 안쓰고 return에서  이런 형태로 쓸 수 도 있음
+	// return useObserver(
+	//   ()=> (
+	//     <>Hi</>
+	//   )
+	// )
 	interface IExampleItem {
 		/**
 		 * 예시 항목의 Index입니다.
@@ -38,42 +40,24 @@ const Sample = observer(() => {
 			emoji: '🎚',
 			title: '카운터',
 			infoShort: 'vue-state-store 의 기본 예시입니다.',
-			link: '/counter',
+			link: '/sample/counter',
 		},
 		{
 			idx: 1,
 			emoji: '📝',
 			title: '할 일 목록',
 			infoShort: 'TODO 리스트 예시입니다.',
-			link: '/todo',
+			link: '/sample/todo',
 		},
 	];
 
-	const { Count, Double, Todo } = useStore();
-
-	// 위쪽에 observer를 안쓰고 return에서  이런 형태로 쓸 수 도 있음
-	// return useObserver(
-	//   ()=> (
-	//     <>Hi</>
-	//   )
-	// )
-
+	// axiosHelper 사용 예제
 	useEffect(() => {
 		const axiosInstace = createAxiosInstance('http://localhost:3000');
 		axiosInstace.get('/api/hello', {}).then((res) => {
 			console.log(res);
 		});
 	}, []);
-
-	autorun(() => {
-		// if( Double.double ){
-		//   console.log(`Double : ${Double.double}  `);
-		// }
-		if (Double.getDouble === 8) {
-			console.log(`만약 value가 8이라면 0으로 초기화`);
-			Double.value = 0;
-		}
-	});
 
 	return (
 		<>
@@ -107,7 +91,7 @@ const Sample = observer(() => {
 				})}
 			</div>
 
-			<NextLink
+			{/* <NextLink
 				href="/choksasdfasdf"
 				onClick={() => {
 					console.log('test clickFunction');
@@ -118,28 +102,7 @@ const Sample = observer(() => {
 
 			<Link href="/choks">
 				<div>sdasd</div>
-			</Link>
-
-			<div>
-				<div>
-					<h1>Count (Class)</h1>
-					<div>number: {Count.num}</div>
-					<button onClick={() => Count.increase()}>plus</button>
-					<button onClick={() => Count.decrease()}>minus</button>
-				</div>
-			</div>
-
-			<div>
-				<h1>Computed</h1>
-				<div>double number: {Double.value}</div>
-				<button onClick={() => Double.increment()}>double increment</button>
-			</div>
-
-			<p>TODO</p>
-			<TodoForm />
-			{Todo.todoList.map((v) => {
-				return <TodoItem data={v} key={`todoData_${v.id}`} />;
-			})}
+			</Link> */}
 		</>
 	);
 });

@@ -5,6 +5,8 @@ import { autorun } from 'mobx';
 import TodoItem from '@components/TodoItem';
 import TodoForm from '@components/TodoForm';
 import { createAxiosInstance } from 'src/core/axiosHelper';
+import NextLink from '@components/NextLink';
+import Link from 'next/link';
 
 // :FC 관련 사용하면 좋지 않다는 말이있어서 해제
 const Choks = observer(() => {
@@ -37,6 +39,19 @@ const Choks = observer(() => {
 	return (
 		<>
 			<>
+				<NextLink
+					href="/choksasdfasdf"
+					onClick={() => {
+						console.log('test clickFunction');
+					}}
+				>
+					<p>NextLink test</p>
+				</NextLink>
+
+				<Link href="/choks">
+					<div>sdasd</div>
+				</Link>
+
 				<div>
 					<div>
 						<h1>Count (Class)</h1>
@@ -54,7 +69,7 @@ const Choks = observer(() => {
 
 				<p>TODO</p>
 				<TodoForm />
-				{Todo.todoData.map((v) => {
+				{Todo.todoList.map((v) => {
 					return <TodoItem data={v} key={`todoData_${v.id}`} />;
 				})}
 			</>

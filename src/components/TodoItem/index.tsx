@@ -17,7 +17,7 @@ const TodoItem = ({ data }: Props) => {
 	return (
 		<div>
 			<input type="checkbox" />
-			<span>{data.content}</span>
+			<span>{data.title}</span>
 			<span onClick={removeItem}>❌</span>
 		</div>
 	);

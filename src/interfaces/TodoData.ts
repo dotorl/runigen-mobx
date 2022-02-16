@@ -1,5 +1,5 @@
 export interface ITodoData {
 	id: number;
-	content: string;
-	checked: boolean;
+	title: string;
+	done: boolean;
 }

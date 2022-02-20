@@ -18,10 +18,6 @@ const Sample = observer(() => {
 		 */
 		idx: number;
 		/**
-		 * 예시 항목의 이모지입니다.
-		 */
-		emoji: string;
-		/**
 		 * 예시 항목의 제목입니다.
 		 */
 		title: string;
@@ -37,14 +33,12 @@ const Sample = observer(() => {
 	const list: IExampleItem[] = [
 		{
 			idx: 0,
-			emoji: '🎚',
 			title: '카운터',
-			infoShort: 'vue-state-store 의 기본 예시입니다.',
+			infoShort: 'counter 기본 예시입니다.',
 			link: '/sample/counter',
 		},
 		{
 			idx: 1,
-			emoji: '📝',
 			title: '할 일 목록',
 			infoShort: 'TODO 리스트 예시입니다.',
 			link: '/sample/todo',
@@ -65,7 +59,7 @@ const Sample = observer(() => {
 				{/* 인덱스 페이지 설명 */}
 				<div className="form">
 					<span className="pr-3"> 🎉 </span>
-					<span className="info-block">넉스트 템플릿의 예시 페이지들이 아래 나열됩니다.</span>
+					<span className="info-block">[Runigen] Nextjs + Mobx 템플릿의 예시 페이지들이 아래 나열됩니다.</span>
 				</div>
 
 				{/* 이동가능한 예시 페이지 목록 */}
@@ -76,7 +70,6 @@ const Sample = observer(() => {
 								<div className="form">
 									{/* 주 내용이 담기는 넓은 레이아웃 */}
 									<div className="w-9/12">
-										<span className="pr-2">{item.emoji}</span>
 										<span className="title">{item.title}</span>
 										<span className="info-short">&nbsp;-&nbsp;{item.infoShort}</span>
 									</div>

@@ -79,6 +79,8 @@ npm i axios
 npm i -D husky@4 lint-staged@next
 
 npm i -D classnames
+
+npx sb init --builder webpack5
 ```
 
 ## (참고문서 - 공유된 notion 확인 )

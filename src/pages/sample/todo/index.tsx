@@ -1,6 +1,6 @@
 import React from 'react';
-import TodoItem from '@components/TodoItem';
-import TodoForm from '@components/TodoForm';
+import TodoItem from '@components/Sample/TodoItem';
+import TodoForm from '@components/Sample/TodoForm';
 import useStore from '@stores/index';
 import { observer } from 'mobx-react';
 

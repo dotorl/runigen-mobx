@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ITodoData } from '@interfaces/TodoData';
+import { ITodoData } from '@interfaces/Sample/TodoData';
 import useStore from '@stores/index';
 
 interface Props {

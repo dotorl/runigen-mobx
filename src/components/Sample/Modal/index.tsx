@@ -1,5 +1,5 @@
-import { CloseModalButton, CreateModal } from '@components/Modal/styled';
-import React, { FC, ReactNode, useCallback } from 'react';
+import { CloseModalButton, CreateModal } from '@components/Sample/Modal/styled';
+import React, { ReactNode, useCallback } from 'react';
 
 interface Props {
 	show: boolean;

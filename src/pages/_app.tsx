@@ -1,6 +1,6 @@
-import Modal from '@components/Modal';
+import Modal from '@components/Sample/Modal';
 import '@styles/globals.scss';
-import { Provider } from 'mobx-react';
+// import { Provider } from 'mobx-react';
 import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {

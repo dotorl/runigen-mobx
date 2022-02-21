@@ -1,6 +1,6 @@
-import Count from '@stores/Count';
-import Double from '@stores/Double';
-import Todo from '@stores/Todo';
+import Count from '@stores/Sample/Count';
+import Double from '@stores/Sample/Double';
+import Todo from '@stores/Sample/Todo';
 
 const store = { Count, Double, Todo };
 

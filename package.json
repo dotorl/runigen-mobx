@@ -2,9 +2,9 @@
 	"name": "runigen-mobx",
 	"private": true,
 	"scripts": {
-		"dev": "env-cmd -f ./src/env/.env.development  next dev",
-		"dev:local": "env-cmd -f ./src/env/.env.local  next dev",
-		"dev:prod": "env-cmd -f ./src/env/.env.production  next dev",
+		"dev": "env-cmd -f .env.development  next dev",
+		"dev:local": "env-cmd -f .env.local  next dev",
+		"dev:prod": "env-cmd -f .env.production  next dev",
 		"build": "next build",
 		"start": "next start",
 		"clean": "rm -rf .next && rm -rf node_modules && npm i",

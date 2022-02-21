@@ -76,11 +76,15 @@ npm i sass
 
 npm i axios
 
+npm i styled-components
+
 npm i -D husky@4 lint-staged@next
 
 npm i -D classnames
 
 npx sb init --builder webpack5
+
+npm i -D env-cmd
 ```
 
 ## (참고문서 - 공유된 notion 확인 )

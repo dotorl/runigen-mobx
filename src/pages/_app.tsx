@@ -4,6 +4,8 @@ import '@styles/globals.scss';
 import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
+	// 환경변수 확인
+	console.log(process.env.NEXT_PUBLIC_API_URL);
 	return (
 		<>
 			<Component {...pageProps} />

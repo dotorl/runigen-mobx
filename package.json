@@ -2,7 +2,9 @@
 	"name": "runigen-mobx",
 	"private": true,
 	"scripts": {
-		"dev": "next dev",
+		"dev": "env-cmd -f ./src/env/.env.development  next dev",
+		"dev:local": "env-cmd -f ./src/env/.env.local  next dev",
+		"dev:prod": "env-cmd -f ./src/env/.env.production  next dev",
 		"build": "next build",
 		"start": "next start",
 		"clean": "rm -rf .next && rm -rf node_modules && npm i",
@@ -50,6 +52,7 @@
 		"@typescript-eslint/parser": "^5.11.0",
 		"babel-loader": "^8.2.3",
 		"classnames": "^2.3.1",
+		"env-cmd": "^10.1.0",
 		"eslint": "^8.7.0",
 		"eslint-config-next": "12.0.8",
 		"eslint-config-prettier": "^8.3.0",

@@ -85,9 +85,19 @@ npm i -D classnames
 npx sb init --builder webpack5
 
 npm i -D env-cmd
+
+npm i -D msw
+
+
 ```
 
 ## (참고문서 - 공유된 notion 확인 )
 
 - eslint --init 관련 설정 (eslint --init 으로 eslint 생성)
 - typescript-eslint Rule 관련 정의
+
+## msw 관련 초기 세팅시 아래 명령어를 통해 public/mockServiceWorker.js 생성
+
+```bash
+npx msw init public/ — save
+```

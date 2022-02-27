@@ -34,13 +34,13 @@
  ┃ ┣ 📜 interfaceTypes.ts
  ┃ ┗ 📜 Weverse.d.ts
  ┣ 📂 pages             ------------------- 각 페이지 담당(Dynamic Route)
+ ┃ ┣ 📜 _app.tsx
+ ┃ ┣ 📜 _document.tsx
+ ┃ ┗ 📜 index.tx
  ┃ ┗ 📂 Page1
  ┃   📜 index.tsx
  ┃ ┗ 📂 Page2
  ┃   📜 index.tsx
- ┃ 📜 _app.tsx
- ┃ 📜 _document.tsx
- ┃ 📜 index.tx
  ┣ 📂 store             ------------------- 상태관리 관련
  ┃ ┣ 📜 xxx.ts
  ┃ ┣ 📜 yyy.ts

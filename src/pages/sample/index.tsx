@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { observer } from 'mobx-react';
-import { createAxiosInstance } from 'src/core/axiosHelper';
+// import { createAxiosInstance } from 'src/core/axiosHelper';
 import NextLink from '@components/NextLink';
 // import Link from 'next/link';
 
@@ -43,15 +43,21 @@ const Sample = observer(() => {
 			infoShort: 'TODO 리스트 예시입니다.',
 			link: '/sample/todo',
 		},
+		{
+			idx: 2,
+			title: 'Mock API (msw) ',
+			infoShort: 'MSW Library 예시입니다.',
+			link: '/sample/msw',
+		},
 	];
 
 	// axiosHelper 사용 예제
-	useEffect(() => {
-		const axiosInstace = createAxiosInstance('http://localhost:3000');
-		axiosInstace.get('/api/hello', {}).then((res) => {
-			console.log(res);
-		});
-	}, []);
+	// useEffect(() => {
+	// 	const axiosInstace = createAxiosInstance('http://localhost:3000');
+	// 	axiosInstace.get('/api/hello', {}).then((res) => {
+	// 		console.log(res);
+	// 	});
+	// }, []);
 
 	return (
 		<>

@@ -3,7 +3,6 @@ import Image from 'next/image';
 import styles from '@styles/Home.module.css';
 import AppLayout from '@layouts/AppLayout';
 import NextLink from '@components/NextLink';
-import Link from 'next/link';
 
 const Home = () => {
 	return (
@@ -16,15 +15,8 @@ const Home = () => {
 					}}
 					className={'asdfasdfasdf'}
 				>
-					<p>NextLink test</p>
-					<p>NextLink test</p>
-					<p>NextLink test</p>
-					<p>NextLink test</p>
+					<p>Sample Page로 이동</p>
 				</NextLink>
-
-				<Link href="/choks">
-					<div>Link</div>
-				</Link>
 
 				<Head>
 					<title>Create Next App</title>

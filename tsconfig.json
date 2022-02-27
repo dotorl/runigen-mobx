@@ -23,6 +23,7 @@
 			"@consts/*": ["src/consts/*"],
 			"@hooks/*": ["src/hooks/*"],
 			"@layouts/*": ["src/layouts/*"],
+			"@mocks/*": ["src/mocks/*"],
 			"@pages/*": ["src/pages/*"],
 			"@stores/*": ["src/stores/*"],
 			"@interfaces/*": ["src/interfaces/*"],

@@ -22,3 +22,10 @@ export const isContainedInArray = (value: any, array: any[]): boolean => {
 export const isIncludedInArray = (value: any, array: any[]): boolean => {
 	return array.includes(value);
 };
+
+// removeHangul
+export const removeHangul = (str: string) => {
+	//const regex = /[ㄱ-ㅎ|가-힣|\[\]\s]/g;
+	const regex = /[^a-zA-Z0-9&]/g;
+	return str.replace(regex, '');
+};
